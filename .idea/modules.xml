@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1_OOP/1_OOP.iml" filepath="$PROJECT_DIR$/1_OOP/1_OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2_Object/2_Object.iml" filepath="$PROJECT_DIR$/2_Object/2_Object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3_Strings/3_Strings.iml" filepath="$PROJECT_DIR$/3_Strings/3_Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4_Collections_API/4_Collections_API.iml" filepath="$PROJECT_DIR$/4_Collections_API/4_Collections_API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5_Exceptions/5_Exceptions.iml" filepath="$PROJECT_DIR$/5_Exceptions/5_Exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6_IO/6_IO.iml" filepath="$PROJECT_DIR$/6_IO/6_IO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7_Threads/7_Threads.iml" filepath="$PROJECT_DIR$/7_Threads/7_Threads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/8_XML/8_XML.iml" filepath="$PROJECT_DIR$/8_XML/8_XML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9_JDBC/9_JDBC.iml" filepath="$PROJECT_DIR$/9_JDBC/9_JDBC.iml" />
+    </modules>
+  </component>
+</project>

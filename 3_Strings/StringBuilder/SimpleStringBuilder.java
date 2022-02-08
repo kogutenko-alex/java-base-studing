@@ -1,0 +1,75 @@
+package StringBuilder;
+
+public class SimpleStringBuilder {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Hello");
+        System.out.println();
+        System.out.println("---------------------------");
+        System.out.println("Конструкторы StringBuilder");
+        System.out.println("---------------------------");
+        System.out.println("string = " + sb);
+        System.out.println("length = " + sb.length());
+        System.out.println("capacity = " + sb.capacity());
+        System.out.println();
+        System.out.println("---------------------------");
+        System.out.println("Методы charAt(), setCharAt()");
+        System.out.println("---------------------------");
+        System.out.println(sb);
+        System.out.println("charAt(1) = " + sb.charAt(1));
+        sb.setCharAt(1, 'i');
+        sb.setLength(2);
+        System.out.println(sb);
+        System.out.println();
+        System.out.println("---------------------------");
+        System.out.println("Метод append()");
+        System.out.println("---------------------------");
+        int a = 42;
+        sb = new StringBuilder(40);
+        System.out.println(sb);
+        String s = sb.append("a = ").append(a).append("!").toString();
+        System.out.println(s);
+        System.out.println();
+        System.out.println("---------------------------");
+        System.out.println("Метод insert()");
+        System.out.println("---------------------------");
+        sb = new StringBuilder("I Java!");
+        System.out.println(sb);
+        sb.insert(2, "like ");
+        System.out.println(sb);
+        System.out.println();
+        System.out.println("---------------------------");
+        System.out.println("Метод reverse()");
+        System.out.println("---------------------------");
+        sb = new StringBuilder("abcdef");
+        System.out.println(sb);
+        sb.reverse();
+        System.out.println(sb);
+        System.out.println();
+        System.out.println("---------------------------");
+        System.out.println("Методы delete() и deleteCharAt()");
+        System.out.println("---------------------------");
+        sb = new StringBuilder("This is a test.");
+        System.out.println(sb);
+        sb.delete(4, 7);
+        System.out.println("После delete: " + sb);
+        sb.deleteCharAt(0);
+        System.out.println("После deleteCharAt: " + sb);
+        System.out.println();
+        System.out.println("---------------------------");
+        System.out.println("Метод replace()");
+        System.out.println("---------------------------");
+        sb = new StringBuilder("Этo простой тест.");
+        System.out.println(sb);
+        sb.replace(4, 11, "был");
+        System.out.println("После замены: " + sb);
+        System.out.println();
+        System.out.println("---------------------------");
+        System.out.println("Методы equals() и hashCode()");
+        System.out.println("---------------------------");
+        StringBuilder stringBuilder1 = new StringBuilder("Hello");
+        StringBuilder stringBuilder2 = new StringBuilder("Hello");
+        System.out.println(stringBuilder1.equals(stringBuilder2));
+        System.out.println(stringBuilder1 == stringBuilder2);
+
+    }
+}
