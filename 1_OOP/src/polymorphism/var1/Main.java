@@ -9,36 +9,3 @@ public class Main {
     }
 }
 
-abstract class Shape {
-    public abstract double area();
-}
-
-class Rectangle extends Shape {
-    private final double width, length;
-
-    public Rectangle(double width, double length) {
-        this.width = width;
-        this.length = length;
-    }
-
-    @Override
-    public double area() {
-        return width * length;
-    }
-}
-class Triangle extends Shape {
-
-    private final double a, b, c;
-
-    public Triangle(double a, double b, double c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
-    }
-
-    @Override
-    public double area() {
-        double halfPerimeter = (this.a + this.b + this.c) / 2;
-        return Math.sqrt(halfPerimeter * (halfPerimeter - this.a) * (halfPerimeter - this.b) * (halfPerimeter - this.c));
-    }
-}

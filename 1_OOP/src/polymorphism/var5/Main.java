@@ -14,19 +14,7 @@ public class Main {
     public static void main(String[] args) {
         Child c = new Child();
         System.out.println(c.getValue()); // результатом будет 1
-        Parent p = c;
-        System.out.println(p.getValue()); // результатом будет 1
+        System.out.println(((Parent) c).getValue()); // результатом будет 1
     }
 }
 
-class Parent {
-    public int getValue() {
-        return 0;
-    }
-}
-
-class Child extends Parent {
-    public int getValue() {
-        return 1;
-    }
-}
